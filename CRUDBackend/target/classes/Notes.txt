@@ -1,0 +1,23 @@
+12  factors to develop the program:
+1. Codebase
+2. Dependecies - we declare in form.xml
+3. Backing Services
+4. Concurrencies
+4. Logs
+5. Admin Process
+6. Code Binding
+7. Backing Services
+8. Config
+9. Build, Run and Release
+10. Stateless Process
+11. Port Binding
+12. Disposibilities
+
+
+
+
+Digital Transformation - Herakou (Platform as a services)
+	
+	-Digitization
+	-Digitalization
+	-Digital Transformation - Integrating Services

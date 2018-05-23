@@ -1,0 +1,26 @@
+JDBC
+Sarvlet
+MHPServlet
+Servletconfig
+MVC
+Filter
+Spring
+Spring MVC
+Maven
+JUnit
+Hibernate
+
+
+HTTP request-> and response <-
+
+Handler Mapping
+Controller
+View Resolver
+View
+
+Handler Mapping
+Controller
+View Resolver
+View
+
+DispatcherServlet

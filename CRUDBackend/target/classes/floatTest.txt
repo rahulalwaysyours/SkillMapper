@@ -1,0 +1,20 @@
+class simple
+{
+	public stattic void main(String args[])
+	{
+	float f = 5.238f;
+	float a = 5.44444f;
+	float b = 458;
+	System.out.println("Value of f: "+f);
+	System.out.println("Value of a: "+a);
+	System.out.println("Value of b: "+b);
+
+	char ch = 'a';
+	int i = ch;
+
+	System.out.println("Value of ch: "+ch);
+	}
+}
+
+//widing typecasting - up typecasting
+//narrow typecasting - down typecasting

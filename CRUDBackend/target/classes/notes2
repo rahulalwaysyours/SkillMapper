@@ -1,0 +1,216 @@
+JDBC
+Sarvlet
+MHPServlet
+Servletconfig
+MVC
+Filter
+Spring
+
+
+
+JDBC: 
+        JAVA APPLICATION ->DRIVERS-> DATABASE
+        DRIVERS DEPENDS UPON DATABASE
+
+        1. LOAD THE DRIVER
+        2. ESTABLISH THEE COMNNECTION
+        3. STATEMMENT CREATION
+        4. EXECUTE AND EXCEPTION HANDLING
+        5. CLOSING 
+
+
+
+in sql statement executione
+"+IntVar+"
+
+'"+String+"'
+
+
+class.forName("");
+Connection conn = DriverManager.getConncection(url,username,password);
+Statement statement = ccnn.createStatement();
+
+Three methods for executing the statement
+-executeQuery= FOR SELECT
+-executeUpdate= FOR INSERT, UPDATE AND DELETE
+-excute= FOR ALL OTHERS...
+
+
+Servlet: Java program that can run on server.  DISADVANTAGE FOR CGI, THATS WHY SERVLET WAS INTRODUCED,
+Serlvet doesn't have any main method.
+public void init(ServletConfig config)
+
+public void service (ServletRequest request, ServletResponse response) theoqws ServletException, IOException
+
+public void destroy()
+
+
+Steps:
+    1. Load servlet class
+    2. create instance of servlet
+    3. call init()
+
+
+
+
+class Generic Servlet implements servlet
+{
+    doesn't override generic method
+}
+
+methods to request: 
+    doGet(HttpServletRequest request, HtttpServletResponse response) throws ServletExceptionm IOException
+    doPost(HttpServletRequest request, HtttpServletResponse response) throws ServletExceptionm IOException
+
+
+
+when any request sent to the server, the http stoes: message=<Request><Response;HTTP 1.1, message
+User Agent
+Host:
+Accept-Language:
+Date:
+Server:
+Content-Type:
+Content-Length:
+
+IN RESPONDS: 
+status-line
+blank-line
+then complete message over there
+
+SERVER PORT: 8005, 1234, 8009
+
+
+directory structure:
+
+sessions:
+    request.getSession()
+    request.getSession(boolean)
+
+    session.setAttribute("key")
+
+
+MVC
+
+-SDLC
+-WATERFALL MODEL
+-SPIRAL MODEL
+-AGILE METHODOLOGY
+-SCRUM 
+-DEVOPS
+-MAVEL
+
+HOW TO CREATE MOVEL PROJECT IN ECLIPES:
+    -new->others->mavel project
+
+
+HIBERNATE:
+//in java beans, there should be all the properties should be private but in pojo there is no restriction
+//mappimg files (employeeclass.hbr.xml) and configuration file (hibernate.cfg.xml)
+
+
+SoringWeb, SpringCore and WebMVC dependencies in creating an API
+
+web.servlet.view.InternalResourceViewResolver
+
+
+
+===web.xml for SpringWebApp
+<web-app version="2.5" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ 
+ <display-name>Archetype Created Web Application</display-name>
+ 
+ 
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+ <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+    </context-param>
+
+   
+</web-app>
+     
+=================DispatcherServlet.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:component-scan base-package="com.niit" />
+
+    <bean
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+</beans>
+
+================git hub important commands
+https://try.github.io/levels/1/challenges/1
+https://git-scm.com
+Commands -
+1. git --version
+2. git config --global user.name "Your Name"
+3. git config --global user.email "Your email"
+4. git config --list
+5. git help config    OR   git config --help
+6. git init
+7. git status
+8. git add FileName.ext
+9. git status
+10. git commit -m "Msg to change"
+11. git log
+12. git remote add origin https://github.com/nazirmohd2006/MyNewRepository
+13. git push -u origin master
+14. git clone https://github.com/nazirmohd2006/example  destinationDirectorytoStoreClone
+==========================
+
+
+POGO doesnt have interface where as Beans "should" have interface.
+
+
+SOAP-> PROTOCOL (USE XML) AND REST-> API (IT IS FAST, IT DOESN'T USE XML)
+REST (HTTP PROTOCOL) API
+
+
+@component
+@Entity
+public class Employee{}
+
+-Ctrl+Space for naming convention;
+
+for back-end, maven->quickstart (dependencies: maven, servletapi, spring web, spring mnvcs
+for Web app, maven->webapp (
+
+In REST API, create

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: x-large;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<form action="CheckLogin" method="post">
+<table width="62%" border="0" align="center">
+  <tr>
+    <td height="45" colspan="2"><span class="style1">Login</span></td>
+  </tr>
+  <tr>
+    <td colspan="2"><hr /></td>
+    </tr>
+  <tr>
+    <td width="35%">Email Id</td>
+    <td width="65%"><label>
+      <input type="text" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" name="email_id" id="email_id" required />
+    </label></td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td><label>
+      <input type="password" name="password" id="password" required/>
+    </label></td>
+  </tr>
+  <tr>
+    <td>Role</td>
+    <td><label>
+      <select name="role" id="role">
+        <option value="0" selected="selected">Employee</option>
+        <option value="1">HR</option>
+      </select>
+    </label></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><label>
+      <input type="submit" name="submit" id="submit" value="Submit" />
+    </label></td>
+  </tr>
+  <tr>
+    <td colspan="2"><hr /></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a href="register.html">Register your Profile</a></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

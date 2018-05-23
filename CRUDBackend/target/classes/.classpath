@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="CareerSelect/src/|MyCodes/|CRUDDemo-Backend/src/test/java/|CRUDDemo-Backend/src/main/java/" kind="src" path=""/>
+	<classpathentry kind="src" path="CareerSelect/src"/>
+	<classpathentry kind="src" path="CRUDDemo-Backend/src/main/java"/>
+	<classpathentry kind="src" path="CRUDDemo-Backend/src/test/java"/>
+	<classpathentry kind="src" path="MyCodes"/>
+	<classpathentry kind="output" path="CRUDDemo-Backend/target/classes"/>
+</classpath>
